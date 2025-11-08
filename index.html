@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Api Rest</title>
 </head>
 <body>
+    <hr>
+    <h1>Conversor de Moneda Nacional</h1>
+    <hr>
     
-    <div>
-        <label>Valor:</label>
-        <input type="number" id="valorIngresado" value="" placeholder="Ingrese valor a calcular">
+    <div class="conversor" >
+        <label>Pesos CLP</label><br>
+        <input type="number" id="valorIngresado" value="" placeholder="Ingrese valor a calcular"><br>
+        <label>Moneda a Convertir:</label><br>
         <select id="tipoMonedas">
             <option value="">Selecciona una Moneda</option>
-        </select>
-        <button id="btnBuscar" type="button">Buscar</button>
-        <label>Resultado:</label>     
+        </select><br>
+        <button class="btn" id="btnBuscar" type="button">Buscar</button><br>
+        <label>...</label> <br>
         <p id="resultado"></p>
     </div>
 

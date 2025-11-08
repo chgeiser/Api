@@ -43,8 +43,7 @@ async function calcularValor() {
   const conversion = monto / valorActual;
 
  resultado.innerHTML = `
-    ${monto} pesos chilenos equivalen a ${conversion.toFixed(2)} ${data.unidad_medida}.
-    <br>Valor actual del ${data.nombre}: ${valorActual} ${data.unidad_medida}.
+    Resultado $${conversion.toFixed(2)} ${data.unidad_medida}.
   `;
 
   const ultimos = data.serie.slice(0, 10).reverse();
