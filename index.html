@@ -9,15 +9,21 @@
     
     <div>
         <label>Valor:</label>
-        <input type="number" id="valorIngresado" value="">
+        <input type="number" id="valorIngresado" value="" placeholder="Ingrese valor a calcular">
         <select id="tipoMonedas">
             <option value="">Selecciona una Moneda</option>
         </select>
-        <button id="buscar" type="button">Buscar</button>
+        <button id="btnBuscar" type="button">Buscar</button>
         <label>Resultado:</label>     
         <p id="resultado"></p>
     </div>
 
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 </html>
