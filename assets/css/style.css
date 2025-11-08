@@ -4,11 +4,17 @@
 }
 
 body{
+    display: grid;
+    grid-template-areas: 'conversor'
+                         'conversor'
+                         'grafico'
+                         'grafico';
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
     background-color: black;
 }
 
-h1{
-    
+h1{ 
     text-align: center;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,11 +22,13 @@ h1{
 }
 
 .conversor{
+    margin-left: 500px;
     text-align: center;
+    align-content: center;
     width: 350px;
     height: 200px;
     background-color: gray;
-    border-radius: 5%;
+    border-radius: 5%   ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
     color: white;
@@ -30,4 +38,10 @@ h1{
     background-color: blue;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.grafico{
+    display: flex;
+    justify-content: center;
+    background-color: white;
 }
